@@ -2,8 +2,8 @@ package com.bit.CVQS.service.Abstract;
 
 import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.core.utils.results.Result;
-import com.bit.CVQS.domain.concrete.Role;
-import com.bit.CVQS.domain.concrete.User;
+import com.bit.CVQS.domain.Concrete.Role;
+import com.bit.CVQS.domain.Concrete.User;
 
 import java.util.List;
 

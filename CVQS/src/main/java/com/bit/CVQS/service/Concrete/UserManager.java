@@ -4,9 +4,9 @@ import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.core.utils.results.Result;
 import com.bit.CVQS.core.utils.results.SuccessDataResult;
 import com.bit.CVQS.core.utils.results.SuccessResult;
-import com.bit.CVQS.dao.abstr.UserDao;
-import com.bit.CVQS.domain.concrete.Role;
-import com.bit.CVQS.domain.concrete.User;
+import com.bit.CVQS.dao.Abstract.UserDao;
+import com.bit.CVQS.domain.Concrete.Role;
+import com.bit.CVQS.domain.Concrete.User;
 import com.bit.CVQS.service.Abstract.UserService;
 import org.springframework.stereotype.Service;
 
@@ -36,6 +36,10 @@ public class UserManager implements UserService {
 
     @Override
     public Result add(User user) {
+        Role role=new Role();
+        role.setId(1);
+        role.setName("Operator");
+        user.roles.add(role);
         this.userDao.save(user);
         return new SuccessResult("User Added Successfully");
     }
