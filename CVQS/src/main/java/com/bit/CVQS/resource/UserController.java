@@ -45,5 +45,11 @@ public class UserController {
         return new SuccessResult("User Added Successfully");
     }
 
+    @PutMapping("/update")
+    public Result update(@RequestBody User user){
+
+        this.userService.update(user);
+        return new SuccessResult("User Updated Successfully");
+    }
 
 }

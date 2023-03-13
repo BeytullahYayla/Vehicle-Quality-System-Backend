@@ -1,9 +1,6 @@
 package com.bit.CVQS.service.Concrete;
 
-import com.bit.CVQS.core.utils.results.DataResult;
-import com.bit.CVQS.core.utils.results.Result;
-import com.bit.CVQS.core.utils.results.SuccessDataResult;
-import com.bit.CVQS.core.utils.results.SuccessResult;
+import com.bit.CVQS.core.utils.results.*;
 import com.bit.CVQS.dao.Abstract.UserDao;
 import com.bit.CVQS.domain.Concrete.Role;
 import com.bit.CVQS.domain.Concrete.User;
@@ -46,6 +43,13 @@ public class UserManager implements UserService {
 
     @Override
     public Result update(User user) {
-        return null;
+        if(this.userDao.findById(user.getUserId()).isEmpty()){
+            return new ErrorResult("User Doesn't Exist");
+        }
+        else{
+            this.userDao.save(user);
+            return new SuccessResult("User Updated Successfully");
+        }
+
     }
 }
