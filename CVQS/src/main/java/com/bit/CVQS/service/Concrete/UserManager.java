@@ -44,4 +44,11 @@ public class UserManager implements UserService {
     public Result update(User user) {
         return null;
     }
+
+    @Override
+    public Result delete(int userId) {
+
+        this.userDao.deleteById(userId);
+        return new SuccessResult("User Deleted Successfully");
+    }
 }

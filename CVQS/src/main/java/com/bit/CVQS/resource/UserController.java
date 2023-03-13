@@ -4,7 +4,7 @@ import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.core.utils.results.Result;
 import com.bit.CVQS.domain.concrete.User;
 import com.bit.CVQS.service.Abstract.UserService;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
 
@@ -35,6 +35,25 @@ public class UserController {
         user.roles.add()
         return null;
     }*/
+
+
+
+        this.userService.add(user);
+        return new SuccessResult("User Added Successfully");
+    }
+
+    @PutMapping("/update")
+    public Result update(@RequestBody User user){
+
+        this.userService.update(user);
+        return new SuccessResult("User Updated Successfully");
+    }
+
+    @DeleteMapping("/delete")
+    public Result delete(@RequestParam int userId){
+        this.userService.delete(userId);
+        return new SuccessResult("UserDeletedSuccessfully");
+    }
 
 
 }
