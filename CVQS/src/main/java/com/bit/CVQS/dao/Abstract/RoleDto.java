@@ -1,6 +1,6 @@
-package com.bit.CVQS.dao.abstr;
+package com.bit.CVQS.dao.Abstract;
 
-import com.bit.CVQS.domain.concrete.Role;
+import com.bit.CVQS.domain.Concrete.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

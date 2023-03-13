@@ -1,5 +1,6 @@
-package com.bit.CVQS.domain.concrete;
+package com.bit.CVQS.domain.Concrete;
 
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,6 +23,9 @@ public class Role {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "roles")
+    @JsonIgnoreProperties("roles")
+    @ManyToMany(mappedBy = "roles",fetch = FetchType.LAZY)
+
+
     public List<User> users;
 }

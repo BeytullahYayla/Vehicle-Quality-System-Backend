@@ -1,5 +1,8 @@
-package com.bit.CVQS.domain.concrete;
+package com.bit.CVQS.domain.Concrete;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,7 +27,8 @@ public class User {
 
     @Column(name = "password")
     private String password;
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @JsonIgnoreProperties("users")
+    @ManyToMany(cascade = {CascadeType.ALL},fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",
             joinColumns = {
                     @JoinColumn(name = "user_id", referencedColumnName = "id",
@@ -32,6 +36,8 @@ public class User {
             inverseJoinColumns = {
                     @JoinColumn(name = "role_id", referencedColumnName = "role_id",
                             nullable = false, updatable = false)})
+
+
     public List<Role> roles;
 
 }
