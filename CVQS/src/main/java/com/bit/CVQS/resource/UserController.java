@@ -51,5 +51,10 @@ public class UserController {
         this.userService.update(user);
         return new SuccessResult("User Updated Successfully");
     }
+    @DeleteMapping("/delete/{id}")
+    public Result delete(@PathVariable int id){
+        this.userService.delete(id);
+        return new SuccessResult("User Deleted Successfully");
+    }
 
 }
