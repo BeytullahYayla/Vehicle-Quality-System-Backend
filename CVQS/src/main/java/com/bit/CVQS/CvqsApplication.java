@@ -2,7 +2,7 @@ package com.bit.CVQS;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+
 
 
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
@@ -12,4 +12,9 @@ public class CvqsApplication {
 		SpringApplication.run(CvqsApplication.class, args);
 	}
 
+
+	@Bean
+	public PasswordEncoder passwordEncoder(){
+		return NoOpPasswordEncoder.getInstance();
+	}
 }

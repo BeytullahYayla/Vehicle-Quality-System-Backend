@@ -6,12 +6,16 @@ import com.bit.CVQS.domain.Concrete.Role;
 import com.bit.CVQS.domain.Concrete.User;
 import com.bit.CVQS.service.Abstract.UserService;
 import com.sun.net.httpserver.Authenticator;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class UserManager implements UserService {
+public class UserManager implements UserService, UserDetailsService {
 
     UserDao userDao;
     public UserManager(UserDao userDao){
@@ -59,5 +63,10 @@ public class UserManager implements UserService {
 
         this.userDao.deleteById(id);
         return new SuccessResult("User Deleted Successfully");
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return new org.springframework.security.core.userdetails.User("admin","password",new ArrayList<>());
     }
 }
