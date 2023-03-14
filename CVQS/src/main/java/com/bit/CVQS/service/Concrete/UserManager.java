@@ -56,6 +56,7 @@ public class UserManager implements UserService {
 
     @Override
     public Result delete(int id) {
+
         this.userDao.deleteById(id);
         return new SuccessResult("User Deleted Successfully");
     }

@@ -28,7 +28,7 @@ public class User {
     @Column(name = "password")
     private String password;
     @JsonIgnoreProperties("users")
-    @ManyToMany(cascade = {CascadeType.ALL},fetch = FetchType.LAZY)
+    @ManyToMany(cascade ={CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH},fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",
             joinColumns = {
                     @JoinColumn(name = "user_id", referencedColumnName = "id",

@@ -24,8 +24,8 @@ public class Role {
     private String name;
 
     @JsonIgnoreProperties("roles")
-    @ManyToMany(mappedBy = "roles",fetch = FetchType.LAZY)
-
+    @ManyToMany(mappedBy = "roles",fetch = FetchType.LAZY,cascade ={CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    //Cascade, bir varlık nesnesinde yapılacak değişikliklerin, ilişkili varlık nesnelerine de yansıtılmasını sağlayan bir özelliktir.
 
     public List<User> users;
 }
