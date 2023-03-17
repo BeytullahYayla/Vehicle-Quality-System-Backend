@@ -2,15 +2,15 @@ package com.bit.CVQS.core.utils.configurations;
 
 
 
+import com.bit.CVQS.core.services.UserDetailService;
 import com.bit.CVQS.core.utils.filters.JwtFilter;
-import com.bit.CVQS.domain.Concrete.User;
-import com.bit.CVQS.service.Concrete.UserManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -19,13 +19,14 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfiguration {
 
     @Autowired
     AuthenticationConfiguration authConfiguration;
 
     @Autowired
-    UserManager userManager;
+    UserDetailService userDetailsService;
 
 
     @Autowired
@@ -33,7 +34,7 @@ public class SecurityConfiguration {
 
     @Autowired
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userManager);
+        auth.userDetailsService(userDetailsService);
     }
 
 
@@ -42,7 +43,8 @@ public class SecurityConfiguration {
 
 
             http.csrf()
-                    .disable()
+                    .disable();
+                    /*
                     .authorizeRequests()
                     .requestMatchers("/api/Authentication/authenticate")
                     .permitAll()
@@ -51,6 +53,8 @@ public class SecurityConfiguration {
                     .and()
                     .sessionManagement()
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                    */
+
 
 
 

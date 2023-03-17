@@ -1,10 +1,9 @@
 package com.bit.CVQS.resource;
 
+import com.bit.CVQS.core.services.UserDetailService;
 import com.bit.CVQS.core.utils.jwt.JwtUtility;
 import com.bit.CVQS.core.utils.requests.JwtRequest;
 import com.bit.CVQS.core.utils.responses.JwtResponse;
-import com.bit.CVQS.service.Abstract.UserService;
-import com.bit.CVQS.service.Concrete.UserManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -22,7 +21,7 @@ public class AuthenticationController {
     JwtUtility jwtUtility;
 
     @Autowired
-    UserManager userManager;
+    UserDetailService userDetailsService;
 
     @Autowired
     AuthenticationManager authenticationManager;
@@ -33,14 +32,17 @@ public class AuthenticationController {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(jwtRequest.getUserName(),
                     jwtRequest.getPassword()));
 
+
+
         }catch (
                 BadCredentialsException e
         ){
             throw new Exception("INVALID_CREDENTIALS", e);
         }
-        final UserDetails userDetails=userManager.loadUserByUsername(jwtRequest.getUserName());
+        final UserDetails userDetails=userDetailsService.loadUserByUsername(jwtRequest.getUserName());
         final String token=jwtUtility.generateToken(userDetails);
 
         return new JwtResponse(token);
+
     }
 }

@@ -1,8 +1,7 @@
 package com.bit.CVQS.core.utils.filters;
 
+import com.bit.CVQS.core.services.UserDetailService;
 import com.bit.CVQS.core.utils.jwt.JwtUtility;
-import com.bit.CVQS.service.Abstract.UserService;
-import com.bit.CVQS.service.Concrete.UserManager;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -24,7 +23,7 @@ public class JwtFilter extends OncePerRequestFilter {
     JwtUtility jwtUtility;
 
     @Autowired
-    UserManager userService;
+    UserDetailService userService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
@@ -32,7 +31,7 @@ public class JwtFilter extends OncePerRequestFilter {
         String token=null;
         String userName=null;
 
-        if(null != authorization && authorization.startsWith("Bearer ")) {
+        if(null != authorization && authorization.startsWith("Bearer")) {
             token = authorization.substring(7);
             userName = jwtUtility.getUsernameFromToken(token);
         }
