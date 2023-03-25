@@ -1,6 +1,6 @@
 package com.bit.CVQS.resource;
 
-import com.bit.CVQS.core.services.UserDetailService;
+import com.bit.CVQS.core.utils.services.UserDetailService;
 import com.bit.CVQS.core.utils.jwt.JwtUtility;
 import com.bit.CVQS.core.utils.requests.JwtRequest;
 import com.bit.CVQS.core.utils.responses.JwtResponse;

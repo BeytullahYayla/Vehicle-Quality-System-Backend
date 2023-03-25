@@ -1,6 +1,6 @@
 package com.bit.CVQS.core.utils.filters;
 
-import com.bit.CVQS.core.services.UserDetailService;
+import com.bit.CVQS.core.utils.services.UserDetailService;
 import com.bit.CVQS.core.utils.jwt.JwtUtility;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
