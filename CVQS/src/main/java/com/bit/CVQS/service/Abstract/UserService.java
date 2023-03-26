@@ -11,6 +11,8 @@ public interface UserService {
     DataResult<List<User>> getAll();
     DataResult<User> getById(int id);
     DataResult<List<User>> getByRole(Role role);
+
+    DataResult<User> getByUserName(String userName);
     Result add(User user);
     Result update(User user);
 
