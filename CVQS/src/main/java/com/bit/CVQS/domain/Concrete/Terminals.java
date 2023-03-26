@@ -22,6 +22,9 @@ public class Terminals {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "is_active")
+    private Boolean isActive;
+
 
     @JsonIgnoreProperties("terminals")
     @ManyToMany(cascade ={CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH},fetch = FetchType.LAZY)
