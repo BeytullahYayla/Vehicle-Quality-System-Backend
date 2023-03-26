@@ -2,6 +2,7 @@ package com.bit.CVQS.resource;
 
 import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.core.utils.results.Result;
+import com.bit.CVQS.core.utils.results.SuccessDataResult;
 import com.bit.CVQS.core.utils.results.SuccessResult;
 import com.bit.CVQS.domain.Concrete.User;
 import com.bit.CVQS.service.Abstract.UserService;
@@ -55,6 +56,10 @@ public class UserController {
     public Result delete(@PathVariable int id){
         this.userService.delete(id);
         return new SuccessResult("User Deleted Successfully");
+    }
+    @GetMapping("/getUserByUserName/{userName}")
+    public DataResult<User> getByUserName(@PathVariable String userName){
+        return this.userService.getByUserName(userName);
     }
 
 }
