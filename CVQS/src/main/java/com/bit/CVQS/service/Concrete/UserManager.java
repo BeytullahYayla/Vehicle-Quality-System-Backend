@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class UserManager implements UserService, UserDetailsService {
+public class UserManager implements UserService {
 
     UserDao userDao;
     public UserManager(UserDao userDao){
@@ -34,6 +34,12 @@ public class UserManager implements UserService, UserDetailsService {
     @Override
     public DataResult<List<User>> getByRole(Role role) {
         return null;
+    }
+
+    @Override
+    public DataResult<User> getByUserName(String userName) {
+
+        return new SuccessDataResult<User>(this.userDao.findUsersByUserName(userName).get(0));
     }
 
     @Override
@@ -65,8 +71,5 @@ public class UserManager implements UserService, UserDetailsService {
         return new SuccessResult("User Deleted Successfully");
     }
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return new org.springframework.security.core.userdetails.User("admin","password",new ArrayList<>());
-    }
+
 }
