@@ -8,5 +8,6 @@ import lombok.*;
 @Getter
 @Setter
 public class JwtResponse {
+
     private String jwtToken;
 }
