@@ -16,14 +16,14 @@ import java.util.List;
 public class TerminalFilters {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "Id")
     private int id;
 
     @Column(name = "name")
     private String name;
 
 
-    @JsonIgnoreProperties("filters")
-    @ManyToMany(mappedBy = "filters",fetch = FetchType.LAZY,cascade ={CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @JsonIgnoreProperties("terminalFilters")
+    @ManyToMany(mappedBy = "terminalFilters",fetch = FetchType.LAZY,cascade ={CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private List<Terminals> terminals;
 }
