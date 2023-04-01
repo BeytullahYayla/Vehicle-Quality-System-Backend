@@ -27,6 +27,10 @@ public class TerminalManager implements TerminalService {
 
     @Override
     public Result add(Terminals terminals) {
+
+
+
+
         this.terminalDao.save(terminals);
         return new SuccessResult("Terminal Added Successfully");
     }
@@ -42,6 +46,7 @@ public class TerminalManager implements TerminalService {
         if (this.terminalDao.findById(terminals.getId()).isEmpty()){
             return new ErrorResult("User Don't Exist");
         }
+        this.terminalDao.save(terminals);
         return new SuccessResult("Terminal Updated Successfully");
     }
 }

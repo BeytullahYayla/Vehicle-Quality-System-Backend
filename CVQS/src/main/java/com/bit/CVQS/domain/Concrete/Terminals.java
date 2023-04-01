@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
 import java.util.List;
 
@@ -26,16 +27,7 @@ public class Terminals {
     private Boolean isActive;
 
 
-    @JsonIgnoreProperties("terminals")
-    @ManyToMany(cascade ={CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH},fetch = FetchType.LAZY)
-    @JoinTable(name = "terminal_filters",
-            joinColumns = {
-                    @JoinColumn(name = "terminal_id", referencedColumnName = "id",
-                            nullable = false, updatable = false)},
-            inverseJoinColumns = {
-                    @JoinColumn(name = "filter_id", referencedColumnName = "id",
-                            nullable = false, updatable = false)})
-    private List<TerminalFilters> terminalFilters;
+
 
 
 

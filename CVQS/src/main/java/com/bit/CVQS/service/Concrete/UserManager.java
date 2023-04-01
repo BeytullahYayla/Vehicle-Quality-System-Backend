@@ -6,6 +6,7 @@ import com.bit.CVQS.domain.Concrete.Role;
 import com.bit.CVQS.domain.Concrete.User;
 import com.bit.CVQS.service.Abstract.UserService;
 import com.sun.net.httpserver.Authenticator;
+import jakarta.validation.constraints.Null;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -44,10 +45,13 @@ public class UserManager implements UserService {
 
     @Override
     public Result add(User user) {
-        Role role=new Role();
-        role.setId(1);
-        role.setName("Operator");
-        user.roles.add(role);
+        if (user.getRoles().isEmpty()){
+            Role role=new Role();
+            role.setId(1);
+            role.setName("Operator");
+            user.roles.add(role);
+        }
+
         this.userDao.save(user);
         return new SuccessResult("User Added Successfully");
     }
