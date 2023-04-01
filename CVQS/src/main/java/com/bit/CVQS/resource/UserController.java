@@ -2,10 +2,9 @@ package com.bit.CVQS.resource;
 
 import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.core.utils.results.Result;
-import com.bit.CVQS.core.utils.results.SuccessDataResult;
 import com.bit.CVQS.core.utils.results.SuccessResult;
 import com.bit.CVQS.domain.Concrete.User;
-import com.bit.CVQS.service.Abstract.UserService;
+import com.bit.CVQS.service.Concrete.Abstract.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

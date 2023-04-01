@@ -4,15 +4,18 @@ import com.bit.CVQS.core.utils.results.*;
 import com.bit.CVQS.dao.Abstract.UserDao;
 import com.bit.CVQS.domain.Concrete.Role;
 import com.bit.CVQS.domain.Concrete.User;
+<<<<<<< Updated upstream
 import com.bit.CVQS.service.Abstract.UserService;
 import com.sun.net.httpserver.Authenticator;
 import jakarta.validation.constraints.Null;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+=======
+import com.bit.CVQS.service.Concrete.Abstract.UserService;
+>>>>>>> Stashed changes
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
