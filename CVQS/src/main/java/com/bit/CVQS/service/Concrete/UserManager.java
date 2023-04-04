@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
 @Service
 public class UserManager implements UserService {
 
@@ -40,10 +39,13 @@ public class UserManager implements UserService {
 
     @Override
     public Result add(User user) {
-        Role role=new Role();
-        role.setId(1);
-        role.setName("Operator");
-        user.roles.add(role);
+        if (user.getRoles().isEmpty()){
+            Role role=new Role();
+            role.setId(1);
+            role.setName("Operator");
+            user.roles.add(role);
+        }
+
         this.userDao.save(user);
         return new SuccessResult("User Added Successfully");
     }
