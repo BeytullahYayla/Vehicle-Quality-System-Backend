@@ -5,10 +5,6 @@ import com.bit.CVQS.dao.Abstract.UserDao;
 import com.bit.CVQS.domain.Concrete.Role;
 import com.bit.CVQS.domain.Concrete.User;
 import com.bit.CVQS.service.Abstract.UserService;
-import com.sun.net.httpserver.Authenticator;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

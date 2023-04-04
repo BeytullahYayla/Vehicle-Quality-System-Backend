@@ -1,5 +1,6 @@
 package com.bit.CVQS.domain.Concrete;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,15 +28,14 @@ public class Terminals {
 
 
     @JsonIgnoreProperties("terminals")
-    @ManyToMany(cascade ={CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH},fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "terminal_filters",
-            joinColumns = {
-                    @JoinColumn(name = "terminal_id", referencedColumnName = "id",
-                            nullable = false, updatable = false)},
-            inverseJoinColumns = {
-                    @JoinColumn(name = "filter_id", referencedColumnName = "id",
-                            nullable = false, updatable = false)})
-    private List<TerminalFilters> terminalFilters;
+            joinColumns = @JoinColumn(name = "terminal_id",referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "filter_id",referencedColumnName = "id"))
+    public List<TerminalFilter> terminalFilters;
+
+
+
 
 
 
