@@ -1,6 +1,7 @@
 package com.bit.CVQS.domain.Concrete;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,13 +27,18 @@ public class Defect {
     @Column(name = "name")
     private String defectName;
 
-    @ManyToOne
-    @MapsId("carId")
-    @JoinColumn(name = "car_id")
-    public Car car;
+    @JsonIgnoreProperties("defects")
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "vehicle_defect",
+            joinColumns = @JoinColumn(name = "defect_id",referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "vehicle_id",referencedColumnName = "id"))
+    public List<Vehicle> vehicles;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "defect")
-    @MapsId("defectLocationId")
+    @JsonIgnoreProperties("defects")
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "defect_defectLocation",
+            joinColumns = @JoinColumn(name = "defect_id",referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "defect_location_id",referencedColumnName = "id"))
     public List<DefectLocation> locations;
+
 }

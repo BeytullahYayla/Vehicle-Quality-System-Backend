@@ -1,6 +1,7 @@
 package com.bit.CVQS.domain.Concrete;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,9 +29,9 @@ public class DefectLocation {
     @Column(name = "y")
     private String y;
 
-   @ManyToOne
-   @JoinColumn(name = "defect_id")
-    public Defect defect;
+    @JsonIgnoreProperties("defectLocation")
+    @ManyToMany(cascade = {CascadeType.ALL},fetch = FetchType.LAZY,mappedBy = "locations")
+    public List<Defect> defects;
 
 
 }

@@ -3,6 +3,7 @@ package com.bit.CVQS.service.Concrete;
 import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.core.utils.results.Result;
 import com.bit.CVQS.core.utils.results.SuccessDataResult;
+import com.bit.CVQS.core.utils.results.SuccessResult;
 import com.bit.CVQS.dao.Abstract.DefectDao;
 import com.bit.CVQS.domain.Concrete.Defect;
 import com.bit.CVQS.service.Abstract.Abstract.DefectService;
@@ -21,6 +22,10 @@ public class DefectManager implements DefectService {
 
     @Override
     public Result add(Defect defect) {
-        return null;
+        this.defactDao.save(defect);
+
+
+
+        return new SuccessResult("Defect Added Successfully");
     }
 }
