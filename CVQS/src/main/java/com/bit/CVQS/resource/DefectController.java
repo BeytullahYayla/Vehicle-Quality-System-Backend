@@ -28,7 +28,7 @@ public class DefectController {
 
     @GetMapping("/getAllBySortedPage/{pageNumber}/{pageSize}")
     public DataResult<Page<Defect>> getAllBySortedPage(@PathVariable int pageNumber,@PathVariable int pageSize){
-        return this.defectService.getAllDefectsWithSortedPagination(pageNumber,pageSize,"defectName");
+        return this.defectService.getAllDefectsWithSortedPagination(pageNumber,pageSize,"defectName","Çapakxx");
     }
     @PostMapping("/add")
     public Result add(@RequestBody Defect defect){
