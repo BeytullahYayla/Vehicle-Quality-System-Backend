@@ -3,7 +3,7 @@ package com.bit.CVQS.service.Concrete;
 import com.bit.CVQS.core.utils.results.*;
 import com.bit.CVQS.dao.Abstract.TerminalFilterDao;
 import com.bit.CVQS.domain.Concrete.TerminalFilter;
-import com.bit.CVQS.service.Abstract.TerminalFilterService;
+import com.bit.CVQS.service.Abstract.Abstract.TerminalFilterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
