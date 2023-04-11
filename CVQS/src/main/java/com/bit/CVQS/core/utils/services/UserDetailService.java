@@ -2,7 +2,7 @@ package com.bit.CVQS.core.utils.services;
 
 import com.bit.CVQS.domain.Concrete.User;
 
-import com.bit.CVQS.service.Abstract.Abstract.UserService;
+import com.bit.CVQS.service.Abstract.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
