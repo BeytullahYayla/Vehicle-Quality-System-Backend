@@ -5,7 +5,7 @@ import com.bit.CVQS.dao.Abstract.TerminalDao;
 import com.bit.CVQS.dao.Abstract.TerminalFilterDao;
 import com.bit.CVQS.domain.Concrete.TerminalFilter;
 import com.bit.CVQS.domain.Concrete.Terminals;
-import com.bit.CVQS.service.Abstract.TerminalService;
+import com.bit.CVQS.service.Abstract.Abstract.TerminalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

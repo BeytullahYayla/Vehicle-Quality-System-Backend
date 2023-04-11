@@ -4,10 +4,12 @@ import com.bit.CVQS.core.utils.results.*;
 import com.bit.CVQS.dao.Abstract.UserDao;
 import com.bit.CVQS.domain.Concrete.Role;
 import com.bit.CVQS.domain.Concrete.User;
-import com.bit.CVQS.service.Abstract.UserService;
+
+
+import com.bit.CVQS.service.Abstract.Abstract.UserService;
+
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 @Service
 public class UserManager implements UserService {

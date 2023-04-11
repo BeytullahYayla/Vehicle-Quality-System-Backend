@@ -3,8 +3,7 @@ package com.bit.CVQS.resource;
 
 import com.bit.CVQS.core.utils.results.*;
 import com.bit.CVQS.domain.Concrete.Terminals;
-import com.bit.CVQS.domain.Concrete.User;
-import com.bit.CVQS.service.Abstract.TerminalService;
+import com.bit.CVQS.service.Abstract.Abstract.TerminalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
