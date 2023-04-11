@@ -12,5 +12,7 @@ public interface DefectService {
     DataResult<Page<Defect>> getAllDefectsByPage(int pageNumber, int pageSize);
 
     DataResult<Page<Defect>> getAllDefectsWithSortedPagination(int pageNumber,int pageSize,String sortBy,String keyword);
+
+    DataResult<List<Defect>> getAllDefectsWithFilter(String searchKeyword);
     Result add(Defect defect);
 }

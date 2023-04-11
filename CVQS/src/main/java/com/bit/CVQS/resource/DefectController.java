@@ -26,10 +26,16 @@ public class DefectController {
         return this.defectService.getAllDefectsByPage(pageNumber,pageSize);
     }
 
-    @GetMapping("/getAllBySortedPage/{pageNumber}/{pageSize}")
-    public DataResult<Page<Defect>> getAllBySortedPage(@PathVariable int pageNumber,@PathVariable int pageSize){
-        return this.defectService.getAllDefectsWithSortedPagination(pageNumber,pageSize,"defectName","Çapakxx");
+    @PostMapping("/getAllBySortedPage/{pageNumber}/{pageSize}")
+    public DataResult<Page<Defect>> getAllBySortedPage(@PathVariable int pageNumber,@PathVariable int pageSize,@RequestParam(defaultValue = "defectName") String sortingParam,@RequestParam(defaultValue = "A") String filter){
+        return this.defectService.getAllDefectsWithSortedPagination(pageNumber,pageSize,sortingParam,filter);
     }
+
+    @PostMapping("/getDefectsWithFilter")
+    public DataResult<List<Defect>> getDefectsWithFilter(@RequestParam String filter){
+        return this.defectService.getAllDefectsWithFilter(filter);
+    }
+
     @PostMapping("/add")
     public Result add(@RequestBody Defect defect){
         return this.defectService.add(defect);

@@ -16,8 +16,7 @@ public class DefectSpesifications {
             String likeKeyword = "%" + keyword + "%";
             return cb.or(
                     cb.like(cb.lower(root.get("defectName")), likeKeyword.toLowerCase()),
-                    cb.like(cb.lower(root.join("vehicles").get("name")), likeKeyword.toLowerCase()),
-                    cb.like(cb.lower(root.join("locations").get("locationName")), likeKeyword.toLowerCase())
+                    cb.like(cb.lower(root.join("vehicles").get("name")), likeKeyword.toLowerCase())
             );
         };
     }

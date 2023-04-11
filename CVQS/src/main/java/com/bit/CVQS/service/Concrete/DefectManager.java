@@ -49,6 +49,13 @@ public class DefectManager implements DefectService {
     }
 
     @Override
+    public DataResult<List<Defect>> getAllDefectsWithFilter(String searchKeyword) {
+        Specification<Defect> spec=DefectSpesifications.search(searchKeyword);
+        return new SuccessDataResult<List<Defect>>(this.defactDao.findAll(spec));
+
+    }
+
+    @Override
     public Result add(Defect defect) {
         for(DefectLocation defectLocation:defect.getLocations()){
             if (this.locationDao.findById(defectLocation.getId()).isEmpty()){
