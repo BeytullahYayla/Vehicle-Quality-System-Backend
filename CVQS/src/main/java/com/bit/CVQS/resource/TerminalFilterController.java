@@ -2,7 +2,7 @@ package com.bit.CVQS.resource;
 
 import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.domain.Concrete.TerminalFilter;
-import com.bit.CVQS.service.Abstract.TerminalFilterService;
+import com.bit.CVQS.service.Abstract.Abstract.TerminalFilterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
