@@ -1,4 +1,4 @@
-package com.bit.CVQS.service.Concrete.Abstract;
+package com.bit.CVQS.service.Abstract;
 
 import com.bit.CVQS.core.utils.results.DataResult;
 import com.bit.CVQS.core.utils.results.Result;

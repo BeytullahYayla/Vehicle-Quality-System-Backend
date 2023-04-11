@@ -2,6 +2,8 @@ package com.bit.CVQS.service.Concrete;
 
 import com.bit.CVQS.core.utils.results.*;
 import com.bit.CVQS.dao.Abstract.TerminalDao;
+import com.bit.CVQS.dao.Abstract.TerminalFilterDao;
+import com.bit.CVQS.domain.Concrete.TerminalFilter;
 import com.bit.CVQS.domain.Concrete.Terminals;
 import com.bit.CVQS.service.Abstract.TerminalService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,9 @@ public class TerminalManager implements TerminalService {
 
     @Autowired
     private TerminalDao terminalDao;
+
+    @Autowired
+    private TerminalFilterDao terminalFilterDao;
     @Override
     public DataResult<List<Terminals>> getAllTerminals() {
         return new SuccessDataResult<List<Terminals>>(this.terminalDao.findAll(),"Terminals Listed Successfully");
@@ -28,6 +33,11 @@ public class TerminalManager implements TerminalService {
     @Override
     public Result add(Terminals terminals) {
 
+        for (TerminalFilter terminalFilter:terminals.getTerminalFilters()){
+            if (this.terminalFilterDao.findById(terminalFilter.getId()).isEmpty()){
+                this.terminalFilterDao.save(terminalFilter);
+            }
+        }
 
 
 
