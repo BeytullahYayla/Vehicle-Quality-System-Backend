@@ -1,4 +1,4 @@
-package com.bit.CVQS.core.utils.jwt;
+package com.bit.CVQS.core.utils.security.jwt;
 
 import org.springframework.stereotype.Component;
 

@@ -36,7 +36,7 @@ public class UserManager implements UserService {
     @Override
     public DataResult<User> getByUserName(String userName) {
 
-        return new SuccessDataResult<User>(this.userDao.findUsersByUserName(userName).get(0));
+        return new SuccessDataResult<User>(this.userDao.findUsersByUserName(userName));
     }
 
     @Override
