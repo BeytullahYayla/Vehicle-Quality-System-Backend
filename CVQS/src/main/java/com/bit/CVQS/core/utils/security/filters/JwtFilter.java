@@ -1,7 +1,7 @@
-package com.bit.CVQS.core.utils.filters;
+package com.bit.CVQS.core.utils.security.filters;
 
 import com.bit.CVQS.core.utils.services.UserDetailService;
-import com.bit.CVQS.core.utils.jwt.JwtUtility;
+import com.bit.CVQS.core.utils.security.jwt.JwtUtility;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,30 +1,70 @@
 package com.bit.CVQS.resource;
 
+import com.bit.CVQS.core.utils.results.ErrorResult;
+import com.bit.CVQS.core.utils.results.Result;
+import com.bit.CVQS.core.utils.results.SuccessResult;
 import com.bit.CVQS.core.utils.services.UserDetailService;
-import com.bit.CVQS.core.utils.jwt.JwtUtility;
+import com.bit.CVQS.core.utils.security.jwt.JwtUtility;
 import com.bit.CVQS.core.utils.requests.JwtRequest;
 import com.bit.CVQS.core.utils.responses.JwtResponse;
+import com.bit.CVQS.dao.Abstract.RoleDao;
+import com.bit.CVQS.dao.Abstract.UserDao;
+import com.bit.CVQS.domain.Concrete.Role;
+import com.bit.CVQS.domain.Concrete.User;
+import com.bit.CVQS.dto.RegisterDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Collections;
+
 @RestController
 @RequestMapping("/api/Authentication")
 public class AuthenticationController {
     @Autowired
-    JwtUtility jwtUtility;
+    private JwtUtility jwtUtility;
 
     @Autowired
-    UserDetailService userDetailsService;
+    private UserDetailService userDetailsService;
 
     @Autowired
-    AuthenticationManager authenticationManager;
+    private AuthenticationManager authenticationManager;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @Autowired
+    private RoleDao roleDao;
+
+    @Autowired
+    private UserDao userDao;
+
+    @PostMapping("/register")
+    public Result register(@RequestBody RegisterDto registerDto){
+        if (this.userDao.existsByUserName(registerDto.getUserName())){
+            return new ErrorResult("Username is already taken!");
+        }
+        User user=new User();
+        user.setUserName(registerDto.getUserName());
+        user.setPassword(passwordEncoder.encode(registerDto.getPassword()));
+
+        Role roles=roleDao.findByName("Operator").get();
+        user.setRoles(Collections.singletonList(roles));
+
+        this.userDao.save(user);
+
+        return new SuccessResult("Registered Successfully");
+
+
+    }
+
 
     @PostMapping("/authenticate")
     public JwtResponse authenticate(@RequestBody JwtRequest jwtRequest) throws Exception{

@@ -17,8 +17,5 @@ public class CvqsApplication {
 	}
 
 
-	@Bean
-	public PasswordEncoder passwordEncoder(){
-		return NoOpPasswordEncoder.getInstance();
-	}
+
 }
