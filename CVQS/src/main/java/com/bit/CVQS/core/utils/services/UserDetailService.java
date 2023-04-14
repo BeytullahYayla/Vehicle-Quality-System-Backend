@@ -27,13 +27,7 @@ public class UserDetailService implements org.springframework.security.core.user
   //  private List<com.bit.CVQS.domain.Concrete.User> users=this.userService.getAll().getData();
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        /*
-        List<com.bit.CVQS.domain.Concrete.User> users=this.userService.getAll().getData();
 
-       if (users.contains(this.userService.getByUserName(username).getData())){
-            return new User(username,this.userService.getByUserName(username).getData().getPassword(),new ArrayList<>());
-        }
-*/
         User user=this.userService.getByUserName(username).getData();
         if(username.toString()=="iremx"){
             return new org.springframework.security.core.userdetails.User(username,this.userService.getByUserName(username).getData().getPassword(),new ArrayList<>());
