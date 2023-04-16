@@ -11,6 +11,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -26,6 +27,9 @@ public class SecurityConfiguration {
     @Autowired
     UserDetailService userDetailsService;
 
+    @Autowired
+    JwtAuthEntryPoint jwtAuthEntryPoint;
+
 
     @Autowired
     JwtFilter jwtFilter;
@@ -40,13 +44,20 @@ public class SecurityConfiguration {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.cors().and().csrf().disable()
-
+        http.cors().and().csrf().disable().exceptionHandling().authenticationEntryPoint(this.jwtAuthEntryPoint)
+                .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-                        .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register").permitAll().anyRequest().authenticated().and()
+                        .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register").permitAll()
+                //.requestMatchers("/api/User/**").hasRole("Admin")
+                .requestMatchers("/api/Defects/add").hasRole("OPERATOR")
+                .requestMatchers("/api/Defects/getAll","/api/Defects/getAllByPage/{pageNumber}/{pageSize}" ,
+                        "/api/Defects/getAllBySortedPage/{pageNumber}/{pageSize}" ,
+                        "/api/Defects/getDefectsWithFilter").hasRole("Team Lead")
+                .requestMatchers("/**").permitAll()
+                .anyRequest().authenticated().and()
                         .httpBasic();
 
-        http.addFilterBefore(new JwtFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }

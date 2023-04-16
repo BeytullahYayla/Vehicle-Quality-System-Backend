@@ -6,6 +6,7 @@ import com.bit.CVQS.domain.Concrete.Role;
 import com.bit.CVQS.domain.Concrete.User;
 
 import com.bit.CVQS.service.Abstract.Abstract.UserService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -41,6 +42,8 @@ public class UserDetailService implements org.springframework.security.core.user
 
 
     }
+
+    @Transactional
 
     private Collection<GrantedAuthority> mapRolesToAuthorities(List<Role> roles){
        return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());

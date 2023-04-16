@@ -26,8 +26,6 @@ public class TerminalFilter {
 
     @JsonIgnoreProperties("terminalFilters")
     @ManyToMany(cascade = {CascadeType.ALL},fetch = FetchType.LAZY,mappedBy = "terminalFilters")
-
-
     public List<Terminals> terminals;
 
 
