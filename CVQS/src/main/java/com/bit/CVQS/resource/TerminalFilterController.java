@@ -1,6 +1,7 @@
 package com.bit.CVQS.resource;
 
 import com.bit.CVQS.core.utils.results.DataResult;
+import com.bit.CVQS.core.utils.results.ErrorDataResult;
 import com.bit.CVQS.core.utils.results.ErrorResult;
 import com.bit.CVQS.domain.Concrete.TerminalFilter;
 import com.bit.CVQS.service.Abstract.Abstract.TerminalFilterService;
@@ -22,12 +23,18 @@ public class TerminalFilterController {
     @GetMapping("/getAll")
     public DataResult<List<TerminalFilter>> getAll(){
         try{
+            log.debug("Terminal Filter GetALl() method executed successfully");
+            return this.terminalFilterService.getAllFilters();
+
+
 
         }
         catch (Exception e){
+            log.error("An error occured while listing terminal filters");
+            return new ErrorDataResult<>("An error occured while listing terminal filters");
 
         }
 
-       return this.terminalFilterService.getAllFilters();
+
     }
 }
