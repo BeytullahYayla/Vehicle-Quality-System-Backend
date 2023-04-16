@@ -1,14 +1,18 @@
 package com.bit.CVQS.resource;
 
 import com.bit.CVQS.core.utils.results.DataResult;
+import com.bit.CVQS.core.utils.results.ErrorResult;
 import com.bit.CVQS.core.utils.results.Result;
+import com.bit.CVQS.core.utils.results.SuccessResult;
 import com.bit.CVQS.domain.Concrete.Vehicle;
 import com.bit.CVQS.service.Abstract.Abstract.VehicleService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/Vehicle")
 public class VehicleController {
@@ -18,10 +22,20 @@ public class VehicleController {
 
     @GetMapping("/getAll")
     public DataResult<List<Vehicle>> getAll(){
+        log.debug("Vehicle getAll executed!");
         return this.vehicleService.getAll();
     }
     @PostMapping("/add")
     public Result add(@RequestBody Vehicle vehicle){
-        return this.vehicleService.add(vehicle);
+        try{
+            this.vehicleService.add(vehicle);
+            log.info("Vehicle added successfully");
+            return new SuccessResult("Vehicle added successfully");
+        }
+        catch (Exception e){
+            log.error("An error occured while adding vehicle id:"+vehicle.getId());
+            return new ErrorResult("An error occured while adding vehicle");
+        }
+
     }
 }

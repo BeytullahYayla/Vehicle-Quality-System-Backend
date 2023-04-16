@@ -47,7 +47,14 @@ public class SecurityConfiguration {
         http.cors().and().csrf().disable().exceptionHandling().authenticationEntryPoint(this.jwtAuthEntryPoint)
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-                        .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register").permitAll().anyRequest().authenticated().and()
+                        .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register").permitAll()
+                //.requestMatchers("/api/User/**").hasRole("Admin")
+                .requestMatchers("/api/Defects/add").hasRole("OPERATOR")
+                .requestMatchers("/api/Defects/getAll","/api/Defects/getAllByPage/{pageNumber}/{pageSize}" ,
+                        "/api/Defects/getAllBySortedPage/{pageNumber}/{pageSize}" ,
+                        "/api/Defects/getDefectsWithFilter").hasRole("Team Lead")
+                .requestMatchers("/**").permitAll()
+                .anyRequest().authenticated().and()
                         .httpBasic();
 
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
