@@ -1,11 +1,14 @@
 package com.bit.CVQS;
 
 import com.bit.CVQS.core.utils.results.DataResult;
+import com.bit.CVQS.core.utils.results.SuccessDataResult;
+import com.bit.CVQS.core.utils.spesifications.DefectSpesifications;
 import com.bit.CVQS.dao.Abstract.DefectDao;
 import com.bit.CVQS.dao.Abstract.LocationDao;
 import com.bit.CVQS.dao.Abstract.VehicleDao;
 import com.bit.CVQS.domain.Concrete.Defect;
 import com.bit.CVQS.domain.Concrete.DefectLocation;
+import com.bit.CVQS.domain.Concrete.Vehicle;
 import com.bit.CVQS.dto.DefectDto;
 import com.bit.CVQS.dto.DefectLocationDto;
 import com.bit.CVQS.dto.VehicleDto;
@@ -16,9 +19,13 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.data.domain.*;
+import org.springframework.data.jpa.domain.Specification;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -87,10 +94,69 @@ public class DefectManagerTests {
 
     }
     @Test
-    public void testGetAllDefectsWithSortedPagination(){
-        int pageNumber=0;
-        int pageSize=10;
-        String sortBy="defectName";
+    public void testGetAllDefectsByPage() {
+        // Test data
+        int pageNumber = 0;
+        int pageSize = 10;
+
+        // Mocking the repository behavior
+        Pageable pageable = PageRequest.of(pageNumber, pageSize);
+        Page<Defect> expectedPagedResult = new PageImpl<>(Arrays.asList(new Defect(), new Defect()), pageable, 2);
+        when(defectDao.findAll(pageable)).thenReturn(expectedPagedResult);
+
+        // Calling the service method
+        DataResult<Page<Defect>> result = defectService.getAllDefectsByPage(pageNumber, pageSize);
+
+        // Assertions
+        assertNotNull(result);
+        assertEquals(expectedPagedResult, result.getData());
     }
+    @Test
+    public void testGetAllDefectsWithSortedPagination() {
+        // Test data
+        int pageNumber = 0;
+        int pageSize = 10;
+        String sortBy = "defectName";
+        String keyword = "searchKeyword";
+
+        // Mocking the repository behavior
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(sortBy));
+        Specification<Defect> specification = Specification.where(null);
+        if (keyword != null && !keyword.isEmpty()) {
+            specification = specification.and(DefectSpesifications.search(keyword));
+        }
+        Page<Defect> pagedResult = new PageImpl<>(Arrays.asList(new Defect(), new Defect()), pageable, 2);
+        when(defectDao.findAllByOrderByDefectNameAsc(pageable)).thenReturn(pagedResult);
+
+        // Calling the service method
+        DataResult<Page<Defect>> result = defectService.getAllDefectsWithSortedPagination(pageNumber, pageSize, sortBy, keyword);
+
+        // Assertions
+        assertNotNull(result);
+        assertEquals(pagedResult, result.getData());
+    }
+
+    /*
+    @Test
+    public void testGetAllDefectsWithFilter() {
+        // Test data
+        String searchKeyword = "keyword";
+
+        // Mocking the repository behavior
+        Specification<Defect> spec = DefectSpesifications.search(searchKeyword);
+        List<Defect> expectedDefects = Arrays.asList(new Defect(), new Defect());
+        when(defectDao.findAll(spec)).thenReturn(expectedDefects);
+
+        // Calling the service method
+        DataResult<List<Defect>> result = defectService.getAllDefectsWithFilter(searchKeyword);
+
+        // Assertions
+        assertNotNull(result);
+        assertEquals(expectedDefects, result.getData());
+    }
+    */
+
+
+
 
 }
