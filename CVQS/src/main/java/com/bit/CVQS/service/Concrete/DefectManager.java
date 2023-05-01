@@ -26,16 +26,22 @@ public class DefectManager implements DefectService {
 
     @Autowired
     private LocationDao locationDao;
+
+
+
     @Override
     public DataResult<List<Defect>> getAllDefects() {
         return new SuccessDataResult<List<Defect>>(this.defactDao.findAll(),"Defects Listed");
     }
+
 
     @Override
     public DataResult<Page<Defect>> getAllDefectsByPage(int pageNumber, int pageSize) {
         Pageable pageable= PageRequest.of(pageNumber,pageSize);
         return new SuccessDataResult<Page<Defect>>(this.defactDao.findAll(pageable));
     }
+
+
 
     @Override
     public DataResult<Page<Defect>> getAllDefectsWithSortedPagination(int pageNumber, int pageSize, String sortBy,String keyword) {

@@ -19,6 +19,7 @@ public class TerminalManager implements TerminalService {
 
     @Autowired
     private TerminalFilterDao terminalFilterDao;
+
     @Override
     public DataResult<List<Terminals>> getAllTerminals() {
         return new SuccessDataResult<List<Terminals>>(this.terminalDao.findAll(),"Terminals Listed Successfully");
@@ -29,6 +30,7 @@ public class TerminalManager implements TerminalService {
 
         return new SuccessDataResult<List<Terminals>>(this.terminalDao.findByIsActiveTrue());
     }
+
 
     @Override
     public Result add(Terminals terminals) {
@@ -44,11 +46,13 @@ public class TerminalManager implements TerminalService {
         return new SuccessResult("Terminal Added Successfully");
     }
 
+
     @Override
     public Result delete(int id) {
         this.terminalDao.deleteById(id);
         return new SuccessResult("Terminal Deleted Successfully");
     }
+
 
     @Override
     public Result update(Terminals terminals) {
