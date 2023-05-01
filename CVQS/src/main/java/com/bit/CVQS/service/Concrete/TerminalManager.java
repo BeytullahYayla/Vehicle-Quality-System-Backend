@@ -38,12 +38,6 @@ public class TerminalManager implements TerminalService {
             }
         }
 
-        for (TerminalFilter terminalFilter:terminals.getTerminalFilters()){
-            if (this.terminalFilterDao.findById(terminalFilter.getId()).isEmpty()){
-                this.terminalFilterDao.save(terminalFilter);
-            }
-        }
-
 
 
         this.terminalDao.save(terminals);

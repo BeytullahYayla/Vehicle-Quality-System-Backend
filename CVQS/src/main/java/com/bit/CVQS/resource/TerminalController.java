@@ -44,7 +44,6 @@ public class TerminalController {
             log.error("An error occured while listing active terminals");
             return new ErrorDataResult<>("An error occured while listing active terminals");
 
-
         }
 
 
