@@ -47,9 +47,9 @@ public class SecurityConfiguration {
         http.cors().and().csrf().disable().exceptionHandling().authenticationEntryPoint(this.jwtAuthEntryPoint)
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-                /*
+
                         .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register").permitAll()
-                //.requestMatchers("/api/User/**").hasRole("Admin")
+                /*.requestMatchers("/api/User/**").hasRole("Admin")
                 .requestMatchers("/api/Defects/add","/api/Defects/getAll").hasRole("OPERATOR")
                 .requestMatchers("/api/Defects/getAllByPage/{pageNumber}/{pageSize}" ,
                         "/api/Defects/getAllBySortedPage/{pageNumber}/{pageSize}" ,

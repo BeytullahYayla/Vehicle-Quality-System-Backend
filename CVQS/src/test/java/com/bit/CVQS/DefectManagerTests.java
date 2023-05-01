@@ -136,6 +136,7 @@ public class DefectManagerTests {
         assertEquals(pagedResult, result.getData());
     }
 
+
     /*
     @Test
     public void testGetAllDefectsWithFilter() {
@@ -155,6 +156,8 @@ public class DefectManagerTests {
         assertEquals(expectedDefects, result.getData());
     }
     */
+
+
 
 
 
