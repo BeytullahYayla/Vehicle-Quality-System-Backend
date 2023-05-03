@@ -43,8 +43,8 @@ public class UserDetailService implements org.springframework.security.core.user
 
     }
 
-    @Transactional
 
+    @Transactional
     private Collection<GrantedAuthority> mapRolesToAuthorities(List<Role> roles){
        return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
 

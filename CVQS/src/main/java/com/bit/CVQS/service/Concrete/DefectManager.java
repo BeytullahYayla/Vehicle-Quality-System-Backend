@@ -16,27 +16,48 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
+
 public class DefectManager implements DefectService {
     @Autowired
     private DefectDao defactDao;
 
     @Autowired
     private LocationDao locationDao;
+<<<<<<< Updated upstream
+=======
+
+
+
+    @PreAuthorize("hasAuthority('OPERATOR')")
+>>>>>>> Stashed changes
     @Override
     public DataResult<List<Defect>> getAllDefects() {
         return new SuccessDataResult<List<Defect>>(this.defactDao.findAll(),"Defects Listed");
     }
 
+<<<<<<< Updated upstream
+=======
+
+    @PreAuthorize("hasAuthority('OPERATOR')")
+
+>>>>>>> Stashed changes
     @Override
     public DataResult<Page<Defect>> getAllDefectsByPage(int pageNumber, int pageSize) {
         Pageable pageable= PageRequest.of(pageNumber,pageSize);
         return new SuccessDataResult<Page<Defect>>(this.defactDao.findAll(pageable));
     }
 
+<<<<<<< Updated upstream
+=======
+
+
+    @PreAuthorize("hasAuthority('OPERATOR')")
+>>>>>>> Stashed changes
     @Override
     public DataResult<Page<Defect>> getAllDefectsWithSortedPagination(int pageNumber, int pageSize, String sortBy,String keyword) {
         Pageable pageable=PageRequest.of(pageNumber,pageSize, Sort.by(sortBy));
@@ -47,14 +68,14 @@ public class DefectManager implements DefectService {
         Page<Defect> pagedResult=defactDao.findAllByOrderByDefectNameAsc(pageable);
         return new SuccessDataResult<Page<Defect>>(pagedResult);
     }
-
+    @PreAuthorize("hasAuthority('OPERATOR')")
     @Override
     public DataResult<List<Defect>> getAllDefectsWithFilter(String searchKeyword) {
         Specification<Defect> spec=DefectSpesifications.search(searchKeyword);
         return new SuccessDataResult<List<Defect>>(this.defactDao.findAll(spec));
 
     }
-
+    @PreAuthorize("hasAuthority('OPERATOR')")
     @Override
     public Result add(Defect defect) {
         for(DefectLocation defectLocation:defect.getLocations()){
