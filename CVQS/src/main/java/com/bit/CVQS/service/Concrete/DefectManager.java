@@ -28,36 +28,29 @@ public class DefectManager implements DefectService {
 
     @Autowired
     private LocationDao locationDao;
-<<<<<<< Updated upstream
-=======
+
 
 
 
     @PreAuthorize("hasAuthority('OPERATOR')")
->>>>>>> Stashed changes
     @Override
     public DataResult<List<Defect>> getAllDefects() {
         return new SuccessDataResult<List<Defect>>(this.defactDao.findAll(),"Defects Listed");
     }
 
-<<<<<<< Updated upstream
-=======
+
 
     @PreAuthorize("hasAuthority('OPERATOR')")
-
->>>>>>> Stashed changes
     @Override
     public DataResult<Page<Defect>> getAllDefectsByPage(int pageNumber, int pageSize) {
         Pageable pageable= PageRequest.of(pageNumber,pageSize);
         return new SuccessDataResult<Page<Defect>>(this.defactDao.findAll(pageable));
     }
 
-<<<<<<< Updated upstream
-=======
+
 
 
     @PreAuthorize("hasAuthority('OPERATOR')")
->>>>>>> Stashed changes
     @Override
     public DataResult<Page<Defect>> getAllDefectsWithSortedPagination(int pageNumber, int pageSize, String sortBy,String keyword) {
         Pageable pageable=PageRequest.of(pageNumber,pageSize, Sort.by(sortBy));

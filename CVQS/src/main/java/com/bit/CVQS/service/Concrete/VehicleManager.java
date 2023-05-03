@@ -16,10 +16,14 @@ import java.util.List;
 public class VehicleManager implements VehicleService {
     @Autowired
     private VehicleDao vehicleDao;
+
+
     @Override
     public DataResult<List<Vehicle>> getAll() {
         return new SuccessDataResult<List<Vehicle>>(this.vehicleDao.findAll());
     }
+
+
 
     @Override
     public Result add(Vehicle vehicle) {

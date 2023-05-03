@@ -13,16 +13,20 @@ import java.util.List;
 public class TerminalFilterManager implements TerminalFilterService {
     @Autowired
     private TerminalFilterDao terminalFilterDao;
+
+
     @Override
     public DataResult<List<TerminalFilter>> getAllFilters() {
         return new SuccessDataResult<List<TerminalFilter>>(this.terminalFilterDao.findAll(),"TerminalFilters Listed Successfully");
     }
+
 
     @Override
     public Result add(TerminalFilter terminalFilter) {
          this.terminalFilterDao.save(terminalFilter);
          return new SuccessResult("Terminal Filter Added Successfully");
     }
+
 
     @Override
     public Result update(TerminalFilter terminalFilter) {
@@ -32,6 +36,7 @@ public class TerminalFilterManager implements TerminalFilterService {
         }
         return new ErrorResult("There is no terminalFilter that matchs with this informations");
     }
+
 
     @Override
     public Result delete(int id) {
