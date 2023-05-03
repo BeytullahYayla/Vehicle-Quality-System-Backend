@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -18,7 +19,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
-@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfiguration {
 
     @Autowired
@@ -48,15 +49,11 @@ public class SecurityConfiguration {
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
 
-                        .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register").permitAll()
-                /*.requestMatchers("/api/User/**").hasRole("Admin")
-                .requestMatchers("/api/Defects/add","/api/Defects/getAll").hasRole("OPERATOR")
-                .requestMatchers("/api/Defects/getAllByPage/{pageNumber}/{pageSize}" ,
-                        "/api/Defects/getAllBySortedPage/{pageNumber}/{pageSize}" ,
-                        "/api/Defects/getDefectsWithFilter").hasRole("Team Lead")
-                .requestMatchers("/**").permitAll()
+                        .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register"
+                        ,"/api/Terminal/**","/api/TerminalFilters/**").permitAll()
+                .requestMatchers("/api/User/**").hasAuthority("ADMIN").requestMatchers("/**").permitAll()
+                .requestMatchers("/api/Defects/**").hasAuthority("OPERATOR").requestMatchers("/**").permitAll()
 
-*/
                 .anyRequest().authenticated().and()
                         .httpBasic();
 
