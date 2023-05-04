@@ -3,10 +3,14 @@ package com.bit.CVQS.domain.Concrete;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.sun.jdi.BooleanType;
 import jakarta.persistence.*;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.*;
 
 import java.util.List;
 
@@ -15,6 +19,8 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Table(name = "users")
+@SQLDelete(sql = "UPDATE users SET deleted = true WHERE id=?")
+@Where(clause = "deleted=false")
 public class User {
 
     @Id
@@ -39,5 +45,8 @@ public class User {
 
 
     public List<Role> roles;
+
+    @Column(name = "deleted")
+    private boolean deleted=Boolean.FALSE;
 
 }

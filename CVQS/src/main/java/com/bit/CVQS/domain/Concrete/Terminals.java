@@ -7,6 +7,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import java.util.List;
 
@@ -15,6 +17,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "terminals")
+@SQLDelete(sql="UPDATE terminals SET deleted = true WHERE id=?")
+@Where(clause = "deleted=false")
 public class Terminals {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +30,10 @@ public class Terminals {
 
     @Column(name = "is_active")
     private Boolean isActive;
+
+
+    @Column(name = "deleted")
+    private boolean deleted=Boolean.FALSE;
 
 
     @JsonIgnoreProperties("terminals")
