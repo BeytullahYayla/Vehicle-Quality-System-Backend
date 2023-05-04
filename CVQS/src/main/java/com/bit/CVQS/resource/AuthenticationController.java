@@ -53,6 +53,7 @@ public class AuthenticationController {
         }
         User user=new User();
         user.setUserName(registerDto.getUserName());
+        user.setDeleted(Boolean.FALSE);
         user.setPassword(passwordEncoder.encode(registerDto.getPassword()));
 
         Role roles=roleDao.findByName("OPERATOR").get();

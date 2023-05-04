@@ -8,21 +8,29 @@ import com.bit.CVQS.domain.Concrete.User;
 
 import com.bit.CVQS.service.Abstract.Abstract.UserService;
 
+import jakarta.persistence.EntityManager;
+import org.hibernate.Filter;
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
 public class UserManager implements UserService {
+    @Autowired
 
-    UserDao userDao;
-    public UserManager(UserDao userDao){
-        this.userDao=userDao;
-    }
+    private UserDao userDao;
+
+    @Autowired
+    private EntityManager entityManager;
 
 
     @Override
     public DataResult<List<User>> getAll() {
-        return new SuccessDataResult<List<User>>(this.userDao.findAll(),"Users Listed");
+
+        List<User> users=this.userDao.findAll();
+
+        return new SuccessDataResult<List<User>>(users,"Users Listed");
     }
 
 

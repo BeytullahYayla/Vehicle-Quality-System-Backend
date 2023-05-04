@@ -6,6 +6,8 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import java.util.List;
 
@@ -14,6 +16,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "defects")
+@SQLDelete(sql="UPDATE defects SET deleted = true WHERE id=?")
+@Where(clause = "deleted=false")
 public class Defect {
 
 
@@ -26,6 +30,9 @@ public class Defect {
 
     @Column(name = "name")
     private String defectName;
+
+    @Column(name = "deleted")
+    private boolean deleted=Boolean.FALSE;
 
     @JsonIgnoreProperties("defects")
     @ManyToMany(fetch = FetchType.LAZY)
