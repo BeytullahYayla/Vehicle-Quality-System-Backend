@@ -19,11 +19,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import static org.mockito.Mockito.*;
 public class VehicleManagerTests {
 
-    //Update testi eksik
+
 
     @Mock
     private VehicleDao vehicleDao;
@@ -71,5 +72,20 @@ public class VehicleManagerTests {
         assertEquals("Vehicle Added Successfully",result.getMessage());
 
         verify(vehicleDao, times(1)).save(vehicle);
+    }
+
+    @Test
+    public void testUpdateVehicle(){
+        Vehicle vehicle=new Vehicle();
+        vehicle.setId(1);
+        vehicle.setName("Ford");
+        vehicle.setDeleted(Boolean.FALSE);
+        Mockito.when(vehicleDao.findById(vehicle.getId())).thenReturn(Optional.of(vehicle));
+
+        Result result=this.vehicleService.update(vehicle);
+        Mockito.verify(vehicleDao,Mockito.times(1)).save(vehicle);
+
+        assertTrue(result.isSuccess());
+        assertEquals("Vehicle Updated Successfully",result.getMessage());
     }
 }

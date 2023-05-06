@@ -5738,3 +5738,22 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-03T23:10:53Z. Curren
 2023-05-06 15:18:10,734 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-06 15:18:10,736 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2023-05-06 15:18:10,739 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-06 16:11:25,109 INFO o.s.b.StartupInfoLogger [main] Starting CvqsApplicationTests using Java 18.0.1.1 with PID 10548 (started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\CVQS)
+2023-05-06 16:11:25,111 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2023-05-06 16:11:25,827 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-06 16:11:25,881 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 7 JPA repository interfaces.
+2023-05-06 16:11:26,333 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-06 16:11:26,410 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-06 16:11:26,538 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-06 16:11:26,701 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-06 16:11:26,795 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4bfa5eb9
+2023-05-06 16:11:26,796 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-06 16:11:26,825 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-06 16:11:27,497 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-06 16:11:27,504 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06 16:11:28,090 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-06 16:11:28,900 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7925e772, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@365a4b9b, org.springframework.security.web.context.SecurityContextHolderFilter@2f2a5064, org.springframework.security.web.header.HeaderWriterFilter@c2dab10, org.springframework.web.filter.CorsFilter@240e61, org.springframework.security.web.authentication.logout.LogoutFilter@23b3afb4, com.bit.CVQS.core.utils.security.filters.JwtFilter@341df373, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c2e73ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fe33512, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fa77770, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76efa2b7, org.springframework.security.web.session.SessionManagementFilter@21f9a305, org.springframework.security.web.access.ExceptionTranslationFilter@44103266, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25b87e1b]
+2023-05-06 16:11:29,367 INFO o.s.b.StartupInfoLogger [main] Started CvqsApplicationTests in 4.541 seconds (process running for 5.234)
+2023-05-06 16:11:29,728 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06 16:11:29,730 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-06 16:11:29,734 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
