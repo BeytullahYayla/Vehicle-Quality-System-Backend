@@ -1,7 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2af5cefd-b29c-446f-9263-62a21b2b1d27" name="Changes" comment="" />
+    <list default="true" id="2af5cefd-b29c-446f-9263-62a21b2b1d27" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.16.3.20211002-1029.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.ui.intro/introstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.metadata/version.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/logs/archive/spring-boot-logging-2023-04-16.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/logs/archive/spring-boot-logging-2023-04-23.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/logs/archive/spring-boot-logging-2023-04-29.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/logs/archive/spring-boot-logging-2023-05-02.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/logs/archive/spring-boot-logging-2023-05-04.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/logs/spring-boot-logging.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/CvqsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/requests/JwtRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/responses/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/results/DataResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/results/ErrorDataResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/results/ErrorResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/results/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/results/SuccessDataResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/results/SuccessResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/security/JwtAuthEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/security/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/security/filters/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/security/jwt/JwtUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/services/UserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/core/utils/spesifications/DefectSpesifications.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dao/Abstract/DefectDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dao/Abstract/LocationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dao/Abstract/RoleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dao/Abstract/TerminalDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dao/Abstract/TerminalFilterDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dao/Abstract/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dao/Abstract/VehicleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Abstract/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Concrete/Defect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Concrete/DefectLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Concrete/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Concrete/TerminalFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Concrete/Terminals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Concrete/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/domain/Concrete/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dto/DefectDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dto/DefectLocationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dto/RegisterDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dto/RoleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/dto/VehicleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/resource/AuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/resource/DefectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/resource/TerminalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/resource/TerminalFilterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/resource/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/resource/VehicleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Abstract/Abstract/DefectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Abstract/Abstract/TerminalFilterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Abstract/Abstract/TerminalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Abstract/Abstract/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Abstract/Abstract/VehicleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Concrete/DefectManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Concrete/TerminalFilterManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Concrete/TerminalManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Concrete/UserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/java/com/bit/CVQS/service/Concrete/VehicleManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/test/java/com/bit/CVQS/CvqsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/test/java/com/bit/CVQS/DefectManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/test/java/com/bit/CVQS/TerminalFilterManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/test/java/com/bit/CVQS/TerminalManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/test/java/com/bit/CVQS/UserManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CVQS/src/test/java/com/bit/CVQS/VehicleManagerTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +123,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Beytullah/Documents/GitHub/CarVehicleQualitySystem/CVQS"
+    "last_opened_file_path": "C:/Users/Beytullah/Documents/GitHub/CarVehicleQualitySystem/UserManangementServices"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
