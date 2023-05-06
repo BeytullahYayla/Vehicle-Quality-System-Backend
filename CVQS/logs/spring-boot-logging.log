@@ -674,7 +674,3 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-04T20:41:52Z. Curren
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-05-06 14:18:53,029 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-10] Defect getAll() method executed successfully
-2023-05-06 14:23:39,286 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-05-06 14:23:39,289 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-05-06 14:23:39,291 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

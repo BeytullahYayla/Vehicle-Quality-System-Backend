@@ -32,6 +32,7 @@ import java.util.Optional;
 
 
 public class DefectManagerTests {
+    //Filtre ile arama testi eksik
     @Mock
     private DefectDao defectDao;
     @Mock
@@ -137,25 +138,9 @@ public class DefectManagerTests {
     }
 
 
-    /*
-    @Test
-    public void testGetAllDefectsWithFilter() {
-        // Test data
-        String searchKeyword = "keyword";
 
-        // Mocking the repository behavior
-        Specification<Defect> spec = DefectSpesifications.search(searchKeyword);
-        List<Defect> expectedDefects = Arrays.asList(new Defect(), new Defect());
-        when(defectDao.findAll(spec)).thenReturn(expectedDefects);
 
-        // Calling the service method
-        DataResult<List<Defect>> result = defectService.getAllDefectsWithFilter(searchKeyword);
 
-        // Assertions
-        assertNotNull(result);
-        assertEquals(expectedDefects, result.getData());
-    }
-    */
 
 
 

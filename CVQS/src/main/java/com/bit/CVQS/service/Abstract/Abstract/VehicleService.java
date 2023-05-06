@@ -26,4 +26,16 @@ public interface VehicleService {
      */
 
     Result add(Vehicle vehicle);
+
+    /**
+     * Updates an existing vehicle in the system.
+     *
+     * @param vehicle The user to be updated.
+     * @return A Result object indicating the outcome of the operation.
+     *         If the vehicle does not exist, returns an ErrorResult with the corresponding message.
+     *         If the vehicle is successfully updated, returns a SuccessResult.
+     */
+    Result update(Vehicle vehicle);
+
+
 }

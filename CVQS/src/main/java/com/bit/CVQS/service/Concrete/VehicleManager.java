@@ -1,10 +1,8 @@
 package com.bit.CVQS.service.Concrete;
 
-import com.bit.CVQS.core.utils.results.DataResult;
-import com.bit.CVQS.core.utils.results.Result;
-import com.bit.CVQS.core.utils.results.SuccessDataResult;
-import com.bit.CVQS.core.utils.results.SuccessResult;
+import com.bit.CVQS.core.utils.results.*;
 import com.bit.CVQS.dao.Abstract.VehicleDao;
+import com.bit.CVQS.domain.Concrete.User;
 import com.bit.CVQS.domain.Concrete.Vehicle;
 import com.bit.CVQS.service.Abstract.Abstract.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,4 +28,17 @@ public class VehicleManager implements VehicleService {
         this.vehicleDao.save(vehicle);
         return new SuccessResult("Vehicle Added Successfully");
     }
+    @Override
+    public Result update(Vehicle vehicle) {
+        if(this.vehicleDao.findById(vehicle.getId()).isEmpty()){
+            return new ErrorResult("Vehicle Doesn't Exist");
+        }
+        else{
+            this.vehicleDao.save(vehicle);
+            return new SuccessResult("Vehicle Updated Successfully");
+        }
+
+    }
+
+
 }
