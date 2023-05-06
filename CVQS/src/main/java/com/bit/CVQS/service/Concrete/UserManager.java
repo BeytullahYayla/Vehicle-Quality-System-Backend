@@ -9,12 +9,12 @@ import com.bit.CVQS.domain.Concrete.User;
 import com.bit.CVQS.service.Abstract.Abstract.UserService;
 
 import jakarta.persistence.EntityManager;
-import org.hibernate.Filter;
-import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class UserManager implements UserService {
     @Autowired
@@ -87,7 +87,7 @@ public class UserManager implements UserService {
     @Override
     public Result delete(int id) {
 
-        this.userDao.deleteById(id);
+        this.userDao.softDelete(id);
         return new SuccessResult("User Deleted Successfully");
     }
 

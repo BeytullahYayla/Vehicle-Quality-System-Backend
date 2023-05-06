@@ -51,7 +51,7 @@ public class SecurityConfiguration {
 
                         .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register"
                         ,"/api/Terminal/**","/api/TerminalFilters/**").permitAll()
-                .requestMatchers("/api/User/**").hasAuthority("ADMIN").requestMatchers("/**").permitAll()
+                .requestMatchers("/api/User/**").hasAuthority("OPERATOR").requestMatchers("/**").permitAll()
                 .requestMatchers("/api/Defects/**").hasAuthority("OPERATOR").requestMatchers("/**").permitAll()
 
                 .anyRequest().authenticated().and()
