@@ -49,7 +49,7 @@ public class TerminalManager implements TerminalService {
 
     @Override
     public Result delete(int id) {
-        this.terminalDao.deleteById(id);
+        this.terminalDao.softDelete(id);
         return new SuccessResult("Terminal Deleted Successfully");
     }
 

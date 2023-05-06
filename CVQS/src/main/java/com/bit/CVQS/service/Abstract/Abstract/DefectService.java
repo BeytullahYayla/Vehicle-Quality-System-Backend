@@ -57,4 +57,15 @@ public interface DefectService {
      */
 
     Result add(Defect defect);
+
+    /**
+     * Deletes a defect from the system by the specified ID.
+     *
+     * @param id The ID of the defect to be deleted.
+     * @return A Result object indicating the outcome of the operation.
+     *         If the defect is successfully deleted, returns a SuccessResult.
+     */
+
+    Result delete(int id);
+
 }
