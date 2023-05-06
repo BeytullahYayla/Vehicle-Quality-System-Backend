@@ -82,4 +82,11 @@ public class DefectManager implements DefectService {
 
         return new SuccessResult("Defect Added Successfully");
     }
+
+    @Override
+    public Result delete(int id) {
+        this.defactDao.softDelete(id);
+
+        return new SuccessResult("Defect Deleted Successfully");
+    }
 }

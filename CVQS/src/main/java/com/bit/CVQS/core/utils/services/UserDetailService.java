@@ -26,13 +26,6 @@ public class UserDetailService implements org.springframework.security.core.user
     @Autowired
     private UserDao userDao;
 
-
-
-
-
-
-
-
   //  private List<com.bit.CVQS.domain.Concrete.User> users=this.userService.getAll().getData();
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
