@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dcc76ce9-325f-43a6-b803-138f3e9ca255" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.16.3.20211002-1029.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.intro/introstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/archive/spring-boot-logging-2023-04-16.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/archive/spring-boot-logging-2023-04-23.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/archive/spring-boot-logging-2023-04-29.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/archive/spring-boot-logging-2023-05-02.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/archive/spring-boot-logging-2023-05-04.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/spring-boot-logging.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/CvqsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/requests/JwtRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/responses/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/results/DataResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/results/ErrorDataResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/results/ErrorResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/results/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/results/SuccessDataResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/results/SuccessResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/security/JwtAuthEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/security/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/security/filters/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/security/jwt/JwtUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/services/UserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/core/utils/spesifications/DefectSpesifications.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dao/Abstract/DefectDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dao/Abstract/LocationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dao/Abstract/RoleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dao/Abstract/TerminalDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dao/Abstract/TerminalFilterDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dao/Abstract/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dao/Abstract/VehicleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Abstract/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Concrete/Defect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Concrete/DefectLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Concrete/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Concrete/TerminalFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Concrete/Terminals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Concrete/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/domain/Concrete/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dto/DefectDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dto/DefectLocationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dto/RegisterDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dto/RoleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/dto/VehicleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/resource/AuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/resource/DefectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/resource/TerminalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/resource/TerminalFilterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/resource/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/resource/VehicleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Abstract/Abstract/DefectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Abstract/Abstract/TerminalFilterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Abstract/Abstract/TerminalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Abstract/Abstract/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Abstract/Abstract/VehicleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Concrete/DefectManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Concrete/TerminalFilterManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Concrete/TerminalManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Concrete/UserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bit/CVQS/service/Concrete/VehicleManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bit/CVQS/CvqsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bit/CVQS/DefectManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bit/CVQS/TerminalFilterManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bit/CVQS/TerminalManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bit/CVQS/UserManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bit/CVQS/VehicleManagerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarVehicleQualitySystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MPzUQ36CNgeQIZ2Ypl4HsBcvpH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Beytullah/Documents/GitHub/CarVehicleQualitySystem/CVQS&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bit.CVQS.dto" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UserManagerTests">
+    <configuration name="TerminalFilterManagerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CVQS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bit.CVQS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bit.CVQS" />
+      <option name="MAIN_CLASS_NAME" value="com.bit.CVQS.TerminalFilterManagerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TerminalManagerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CVQS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bit.CVQS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bit.CVQS" />
+      <option name="MAIN_CLASS_NAME" value="com.bit.CVQS.TerminalManagerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CVQS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bit.CVQS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bit.CVQS" />
+      <option name="MAIN_CLASS_NAME" value="com.bit.CVQS.UserManagerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagerTests.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CVQS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bit.CVQS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bit.CVQS" />
+      <option name="MAIN_CLASS_NAME" value="com.bit.CVQS.UserManagerTests" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleManagerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CVQS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bit.CVQS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bit.CVQS" />
+      <option name="MAIN_CLASS_NAME" value="com.bit.CVQS.VehicleManagerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserManagerTests" />
+        <item itemvalue="JUnit.TerminalManagerTests" />
+        <item itemvalue="JUnit.TerminalFilterManagerTests" />
+        <item itemvalue="JUnit.VehicleManagerTests" />
+        <item itemvalue="JUnit.UserManagerTests.testAdd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcc76ce9-325f-43a6-b803-138f3e9ca255" name="Changes" comment="" />
+      <created>1677684020499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677684020499</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.bit.CVQS.service.Concrete.UserManager" memberName="userDao" />
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="credentials" />
+        <PinnedItemInfo parentTag="com.bit.CVQS.core.utils.results.SuccessDataResult" memberName="data" />
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="authorities" />
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="principal" />
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="authenticated" />
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="details" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="http.filters.get(0).order" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
