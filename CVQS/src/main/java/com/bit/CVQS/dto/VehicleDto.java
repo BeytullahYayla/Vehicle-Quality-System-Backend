@@ -10,8 +10,9 @@ import java.util.List;
 @Setter
 public class VehicleDto {
 
-    int id;
-    String name;
-    List<DefectDto> defects;
+    private int id;
+    private String name;
+    private List<DefectDto> defects;
+    public Boolean deleted;
 
 }

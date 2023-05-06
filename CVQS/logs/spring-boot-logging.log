@@ -5604,3 +5604,137 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-01T16:38:38Z. Curren
 2023-05-04 15:43:08,611 DEBUG c.b.C.r.VehicleController [http-nio-8080-exec-1] Vehicle getAll executed!
 2023-05-04 15:50:32,024 INFO c.b.C.r.DefectController [http-nio-8080-exec-5] Defect add() method executed
 2023-05-04 15:50:35,745 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-6] Defect getAll() method executed successfully
+2023-05-06 15:08:27,560 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CvqsApplication using Java 18.0.1.1 with PID 11232 (C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\CVQS\target\classes started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\CVQS)
+2023-05-06 15:08:27,562 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-05-06 15:08:27,592 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-06 15:08:27,592 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-06 15:08:28,140 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-06 15:08:28,201 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 56 ms. Found 7 JPA repository interfaces.
+2023-05-06 15:08:28,742 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-05-06 15:08:28,761 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-05-06 15:08:28,762 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-06 15:08:28,814 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-06 15:08:28,816 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1222 ms
+2023-05-06 15:08:28,947 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-06 15:08:28,983 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-06 15:08:29,077 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-06 15:08:29,156 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-05-06 15:08:29,239 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68453e36
+2023-05-06 15:08:29,240 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-05-06 15:08:29,257 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-06 15:08:29,916 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-06 15:08:29,921 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06 15:08:30,474 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-06 15:08:31,082 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c6dc8f7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e6f079b, org.springframework.security.web.context.SecurityContextHolderFilter@55309030, org.springframework.security.web.header.HeaderWriterFilter@8364b12, org.springframework.web.filter.CorsFilter@758b0c88, org.springframework.security.web.authentication.logout.LogoutFilter@6886c69, com.bit.CVQS.core.utils.security.filters.JwtFilter@3d31632, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1cc1da23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d98127b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@502a1034, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@580dbfb7, org.springframework.security.web.session.SessionManagementFilter@58ae4ca1, org.springframework.security.web.access.ExceptionTranslationFilter@22df6973, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d2ce676]
+2023-05-06 15:08:31,398 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-06 15:08:31,433 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-06 15:08:31,443 INFO o.s.b.StartupInfoLogger [restartedMain] Started CvqsApplication in 4.215 seconds (process running for 4.494)
+2023-05-06 15:08:41,203 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-06 15:08:41,203 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-05-06 15:08:41,204 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-05-06 15:08:41,248 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-05-03T23:10:53Z. Current time: 2023-05-06T15:08:41Z, a difference of 230268248 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.bit.CVQS.core.utils.security.jwt.JwtUtility.getAllClaimsFromToken(JwtUtility.java:50)
+	at com.bit.CVQS.core.utils.security.jwt.JwtUtility.getClaimFromToken(JwtUtility.java:43)
+	at com.bit.CVQS.core.utils.security.jwt.JwtUtility.getUsernameFromToken(JwtUtility.java:33)
+	at com.bit.CVQS.core.utils.security.filters.JwtFilter.doFilterInternal(JwtFilter.java:41)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-06 15:09:03,134 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-5] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:11:14,381 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-8] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:11:17,898 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-9] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:11:31,145 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-10] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:11:58,437 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-2] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:12:13,790 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06 15:12:13,794 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-06 15:12:13,797 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-06 15:12:17,309 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CvqsApplication using Java 18.0.1.1 with PID 6940 (C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\CVQS\target\classes started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\CVQS)
+2023-05-06 15:12:17,311 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-05-06 15:12:17,359 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-06 15:12:17,359 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-06 15:12:17,892 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-06 15:12:17,945 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 49 ms. Found 7 JPA repository interfaces.
+2023-05-06 15:12:18,479 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-05-06 15:12:18,495 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-05-06 15:12:18,495 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-06 15:12:18,547 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-06 15:12:18,548 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1188 ms
+2023-05-06 15:12:18,677 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-06 15:12:18,707 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-06 15:12:18,798 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-06 15:12:18,885 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-05-06 15:12:18,958 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f2b7668
+2023-05-06 15:12:18,960 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-05-06 15:12:18,976 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-06 15:12:19,571 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-06 15:12:19,578 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06 15:12:20,176 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-06 15:12:20,788 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a016241, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16f2801b, org.springframework.security.web.context.SecurityContextHolderFilter@70bb83d1, org.springframework.security.web.header.HeaderWriterFilter@3c8c5ddd, org.springframework.web.filter.CorsFilter@dec33f7, org.springframework.security.web.authentication.logout.LogoutFilter@535d4b74, com.bit.CVQS.core.utils.security.filters.JwtFilter@71a99dc2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7d0a2ab0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36fe58dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24903d17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21a0b05a, org.springframework.security.web.session.SessionManagementFilter@1986ee28, org.springframework.security.web.access.ExceptionTranslationFilter@1bacb6d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f2949d8]
+2023-05-06 15:12:21,049 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-06 15:12:21,073 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-06 15:12:21,081 INFO o.s.b.StartupInfoLogger [restartedMain] Started CvqsApplication in 4.096 seconds (process running for 4.35)
+2023-05-06 15:12:41,921 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-06 15:12:41,921 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-05-06 15:12:41,922 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-05-06 15:12:42,085 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-1] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:12:45,269 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-3] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:12:53,572 DEBUG c.b.C.r.DefectController [http-nio-8080-exec-2] Defect getDefecgtsWithFilter() method executed
+2023-05-06 15:18:10,734 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06 15:18:10,736 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-06 15:18:10,739 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

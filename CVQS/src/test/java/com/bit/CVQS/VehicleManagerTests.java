@@ -23,6 +23,7 @@ import java.util.List;
 import static org.mockito.Mockito.*;
 public class VehicleManagerTests {
 
+    //Update testi eksik
 
     @Mock
     private VehicleDao vehicleDao;

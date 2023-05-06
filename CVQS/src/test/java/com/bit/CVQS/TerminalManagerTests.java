@@ -23,6 +23,7 @@ import static org.mockito.Mockito.*;
 
 
 public class TerminalManagerTests {
+    //Silme testi eksik
 
     @Mock
     private TerminalDao terminalDao;
