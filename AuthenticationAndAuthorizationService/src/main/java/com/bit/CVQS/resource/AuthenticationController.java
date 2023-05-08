@@ -67,7 +67,7 @@ public class AuthenticationController {
     }
 
 
-    @PostMapping("/authenticate")
+    @PostMapping("/token")
     public JwtResponse authenticate(@RequestBody JwtRequest jwtRequest) throws Exception{
         try{
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(jwtRequest.getUserName(),

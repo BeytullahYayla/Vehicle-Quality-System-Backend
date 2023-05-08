@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -49,10 +51,8 @@ public class SecurityConfiguration {
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
 
-                        .requestMatchers("/api/Authentication/authenticate","/api/Authentication/register"
-                        ,"/api/Terminal/**","/api/TerminalFilters/**").permitAll()
-                .requestMatchers("/api/User/**").hasAuthority("OPERATOR").requestMatchers("/**").permitAll()
-                .requestMatchers("/api/Defects/**").hasAuthority("OPERATOR").requestMatchers("/**").permitAll()
+                        .requestMatchers("/api/Authentication/token","/api/Authentication/register").permitAll()
+
 
                 .anyRequest().authenticated().and()
                         .httpBasic();
@@ -61,6 +61,7 @@ public class SecurityConfiguration {
 
         return http.build();
     }
+
 
 
 
