@@ -1,6 +1,5 @@
 package com.bit.CVQS.dto;
 
-import com.bit.CVQS.domain.Concrete.Role;
 import lombok.Getter;
 import lombok.Setter;
 

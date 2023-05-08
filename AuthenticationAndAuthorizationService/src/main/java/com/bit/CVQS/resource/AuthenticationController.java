@@ -56,7 +56,7 @@ public class AuthenticationController {
         user.setDeleted(Boolean.FALSE);
         user.setPassword(passwordEncoder.encode(registerDto.getPassword()));
 
-        Role roles=roleDao.findByName("OPERATOR").get();
+        com.bit.CVQS.domain.Concrete.Role roles=roleDao.findByName("OPERATOR").get();
         user.setRoles(Collections.singletonList(roles));
 
         this.userDao.save(user);
