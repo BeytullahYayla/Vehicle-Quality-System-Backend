@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>defects</artifactId>
+	<artifactId>auth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>defects</name>
+	<name>auth</name>
 	<description>AuthenticationAndAuthorizationServices</description>
 	<properties>
 		<java.version>17</java.version>
