@@ -10,6 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.security.Security;
 
 @SpringBootApplication()
+
 public class CvqsApplication {
 
 	public static void main(String[] args) {
