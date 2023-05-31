@@ -1,0 +1,150 @@
+2023-05-10 15:52:28,162 INFO o.s.b.StartupInfoLogger [main] Starting CvqsApplicationTests using Java 18.0.1.1 with PID 21720 (started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService)
+2023-05-10 15:52:28,165 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2023-05-10 15:52:28,882 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-10 15:52:28,928 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2023-05-10 15:52:29,374 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-10 15:52:29,465 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-10 15:52:29,640 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-10 15:52:29,795 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 15:52:29,919 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@300bb303
+2023-05-10 15:52:29,920 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 15:52:29,964 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-10 15:52:30,567 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-10 15:52:30,573 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 15:52:31,337 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 15:52:32,263 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@299615a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ba6707e, org.springframework.security.web.context.SecurityContextHolderFilter@3a0f5141, org.springframework.security.web.header.HeaderWriterFilter@167ccc3c, org.springframework.web.filter.CorsFilter@4b407ac7, org.springframework.security.web.authentication.logout.LogoutFilter@2c4eda3a, com.bit.CVQS.core.utils.security.filters.JwtFilter@65fe1f47, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e778abb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b446d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bb46040, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c5ae26d, org.springframework.security.web.session.SessionManagementFilter@3ba8fbc8, org.springframework.security.web.access.ExceptionTranslationFilter@40aaf656, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72924f19]
+2023-05-10 15:52:32,685 INFO o.s.b.StartupInfoLogger [main] Started CvqsApplicationTests in 4.814 seconds (process running for 5.515)
+2023-05-10 15:52:32,852 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 15:52:32,855 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-10 15:52:32,860 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-10 15:57:13,249 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CvqsApplication using Java 18.0.1.1 with PID 24440 (C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService\target\classes started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService)
+2023-05-10 15:57:13,251 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-05-10 15:57:13,286 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-10 15:57:13,286 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-10 15:57:13,899 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-10 15:57:13,944 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2023-05-10 15:57:14,574 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-05-10 15:57:14,594 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-05-10 15:57:14,594 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-10 15:57:14,651 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-10 15:57:14,653 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1365 ms
+2023-05-10 15:57:14,801 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-10 15:57:14,870 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-10 15:57:14,964 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-10 15:57:15,052 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-05-10 15:57:15,123 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5192bc18
+2023-05-10 15:57:15,124 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-05-10 15:57:15,140 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-10 15:57:15,636 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-10 15:57:15,641 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 15:57:16,338 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 15:57:17,083 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@678403c2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28db7f02, org.springframework.security.web.context.SecurityContextHolderFilter@30588cca, org.springframework.security.web.header.HeaderWriterFilter@7a89af19, org.springframework.web.filter.CorsFilter@d31db62, org.springframework.security.web.authentication.logout.LogoutFilter@1e38646d, com.bit.CVQS.core.utils.security.filters.JwtFilter@697585ca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5c927040, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23caa7a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d04879e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65f76d1d, org.springframework.security.web.session.SessionManagementFilter@4257ceac, org.springframework.security.web.access.ExceptionTranslationFilter@3746d41f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50a4534]
+2023-05-10 15:57:17,338 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-10 15:57:17,367 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-10 15:57:17,376 INFO o.s.b.StartupInfoLogger [restartedMain] Started CvqsApplication in 4.482 seconds (process running for 4.774)
+2023-05-10 16:18:40,267 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 16:18:40,269 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-10 16:18:40,272 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-10 17:44:14,515 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CvqsApplication using Java 18.0.1.1 with PID 2256 (C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService\target\classes started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService)
+2023-05-10 17:44:14,517 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-05-10 17:44:14,561 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-10 17:44:14,561 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-10 17:44:15,303 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-10 17:44:15,351 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2023-05-10 17:44:15,937 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-05-10 17:44:15,950 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-05-10 17:44:15,950 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-10 17:44:16,009 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-10 17:44:16,010 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1447 ms
+2023-05-10 17:44:16,175 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-10 17:44:16,233 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-10 17:44:16,352 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-10 17:44:16,451 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-05-10 17:44:16,543 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18a24a15
+2023-05-10 17:44:16,544 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-05-10 17:44:16,565 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-10 17:44:17,118 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-10 17:44:17,124 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 17:44:17,861 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 17:44:18,598 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@df67b4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d729c07, org.springframework.security.web.context.SecurityContextHolderFilter@2c8c7648, org.springframework.security.web.header.HeaderWriterFilter@60245602, org.springframework.web.filter.CorsFilter@cbdc052, org.springframework.security.web.authentication.logout.LogoutFilter@497957c0, com.bit.CVQS.core.utils.security.filters.JwtFilter@111eaf4c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4da7ba65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e5cf84e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@696676d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40a4ee8b, org.springframework.security.web.session.SessionManagementFilter@36fcb3cd, org.springframework.security.web.access.ExceptionTranslationFilter@7bc4c457, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@379eff72]
+2023-05-10 17:44:19,013 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-10 17:44:19,062 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-10 17:44:19,074 INFO o.s.b.StartupInfoLogger [restartedMain] Started CvqsApplication in 4.943 seconds (process running for 6.651)
+2023-05-10 17:44:21,772 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-10 17:44:21,773 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-05-10 17:44:21,773 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-05-10 17:44:34,593 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 17:44:34,596 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-10 17:44:34,600 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-10 17:50:07,855 INFO o.s.b.StartupInfoLogger [main] Starting CvqsApplicationTests using Java 18.0.1.1 with PID 7708 (started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService)
+2023-05-10 17:50:07,856 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2023-05-10 17:50:08,522 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-10 17:50:08,564 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2023-05-10 17:50:08,982 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-10 17:50:09,037 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-10 17:50:09,173 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-10 17:50:09,345 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 17:50:09,432 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71f0806b
+2023-05-10 17:50:09,435 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 17:50:09,454 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-10 17:50:09,988 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-10 17:50:09,994 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 17:50:10,782 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 17:50:11,751 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@159a32a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ceb368b, org.springframework.security.web.context.SecurityContextHolderFilter@3bbb3c84, org.springframework.security.web.header.HeaderWriterFilter@2f403d0a, org.springframework.web.filter.CorsFilter@1ddc5857, org.springframework.security.web.authentication.logout.LogoutFilter@3a0f5141, com.bit.CVQS.core.utils.security.filters.JwtFilter@3a36da5e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14d9ae22, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f0c2eff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cddc50f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f0df74, org.springframework.security.web.session.SessionManagementFilter@672549f3, org.springframework.security.web.access.ExceptionTranslationFilter@726d0482, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33f3ebfc]
+2023-05-10 17:50:12,131 INFO o.s.b.StartupInfoLogger [main] Started CvqsApplicationTests in 4.538 seconds (process running for 5.29)
+2023-05-10 17:50:12,314 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 17:50:12,318 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-10 17:50:12,323 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-10 18:05:29,084 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CvqsApplication using Java 18.0.1.1 with PID 9756 (C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService\target\classes started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService)
+2023-05-10 18:05:29,086 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-05-10 18:05:29,128 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-10 18:05:29,129 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-10 18:05:29,760 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-10 18:05:29,803 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2023-05-10 18:05:30,392 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-05-10 18:05:30,470 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1340 ms
+2023-05-10 18:05:30,604 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-10 18:05:30,641 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-10 18:05:30,732 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-10 18:05:30,817 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-05-10 18:05:30,898 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@564111
+2023-05-10 18:05:30,900 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-05-10 18:05:30,917 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-10 18:05:31,438 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-10 18:05:31,444 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 18:05:32,201 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 18:05:33,030 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22aae872, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51fab04a, org.springframework.security.web.context.SecurityContextHolderFilter@1fd32173, org.springframework.security.web.header.HeaderWriterFilter@65860f57, org.springframework.web.filter.CorsFilter@52138bdc, org.springframework.security.web.authentication.logout.LogoutFilter@137a7cb7, com.bit.CVQS.core.utils.security.filters.JwtFilter@4bafcd61, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@28db7f02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46b690b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74a51998, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c528b06, org.springframework.security.web.session.SessionManagementFilter@3b5e9175, org.springframework.security.web.access.ExceptionTranslationFilter@5cd41f14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55f0a27a]
+2023-05-10 18:05:33,323 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-10 18:05:33,350 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-10 18:05:33,359 INFO o.s.b.StartupInfoLogger [restartedMain] Started CvqsApplication in 4.629 seconds (process running for 4.939)
+2023-05-10 18:05:33,380 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 18:05:33,382 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-10 18:05:33,386 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-10 18:05:44,337 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CvqsApplication using Java 18.0.1.1 with PID 4932 (C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService\target\classes started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\AuthenticationAndAuthorizationService)
+2023-05-10 18:05:44,339 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-05-10 18:05:44,375 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-10 18:05:44,375 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-10 18:05:44,976 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-10 18:05:45,021 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2023-05-10 18:05:45,557 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-05-10 18:05:45,568 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-05-10 18:05:45,568 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-10 18:05:45,623 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-10 18:05:45,624 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1247 ms
+2023-05-10 18:05:45,756 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-10 18:05:45,788 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-10 18:05:45,875 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-05-10 18:05:45,958 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-05-10 18:05:46,043 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@564111
+2023-05-10 18:05:46,044 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-05-10 18:05:46,062 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-10 18:05:46,616 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-10 18:05:46,621 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 18:05:47,256 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 18:05:48,023 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51fab04a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52138bdc, org.springframework.security.web.context.SecurityContextHolderFilter@5049dec5, org.springframework.security.web.header.HeaderWriterFilter@4000dfab, org.springframework.web.filter.CorsFilter@c528b06, org.springframework.security.web.authentication.logout.LogoutFilter@630864ff, com.bit.CVQS.core.utils.security.filters.JwtFilter@5cd61b7d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@d31db62, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74a51998, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@727b76c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@794e1b86, org.springframework.security.web.session.SessionManagementFilter@2b87adc2, org.springframework.security.web.access.ExceptionTranslationFilter@4898938b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30b14240]
+2023-05-10 18:05:48,334 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-10 18:05:48,363 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-10 18:05:48,373 INFO o.s.b.StartupInfoLogger [restartedMain] Started CvqsApplication in 4.382 seconds (process running for 4.678)
+2023-05-10 18:07:23,851 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 18:07:23,853 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-10 18:07:23,855 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
