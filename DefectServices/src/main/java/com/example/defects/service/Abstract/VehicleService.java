@@ -3,8 +3,8 @@ package com.example.defects.service.Abstract;
 
 import com.example.defects.core.results.DataResult;
 import com.example.defects.core.results.Result;
+import com.example.defects.domain.Defect;
 import com.example.defects.domain.Vehicle;
-
 import java.util.List;
 
 public interface VehicleService {
