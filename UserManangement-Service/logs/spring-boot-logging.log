@@ -1,0 +1,42 @@
+2023-06-02 22:44:56,581 INFO o.s.b.StartupInfoLogger [main] Starting UserApplication using Java 18.0.1.1 with PID 13740 (C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\UserManangement-Service\target\classes started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\UserManangement-Service)
+2023-06-02 22:44:56,585 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2023-06-02 22:44:57,131 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-02 22:44:57,175 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-06-02 22:44:57,640 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2023-06-02 22:44:57,648 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-02 22:44:57,648 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-02 22:44:57,730 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-02 22:44:57,731 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1104 ms
+2023-06-02 22:44:57,872 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-02 22:44:57,925 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-02 22:44:58,013 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-06-02 22:44:58,135 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-02 22:44:58,253 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cee2e10
+2023-06-02 22:44:58,254 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-02 22:44:58,288 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-02 22:44:58,858 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-02 22:44:58,864 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-02 22:44:59,265 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-02 22:44:59,573 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-02 22:44:59,579 INFO o.s.b.StartupInfoLogger [main] Started UserApplication in 3.428 seconds (process running for 3.698)
+2023-06-02 22:45:04,446 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-02 22:45:04,452 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-02 22:45:04,457 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-06-02 22:46:14,442 INFO o.s.b.StartupInfoLogger [main] Starting UserApplicationTests using Java 18.0.1.1 with PID 8928 (started by Beytullah in C:\Users\Beytullah\Documents\GitHub\CarVehicleQualitySystem\UserManangement-Service)
+2023-06-02 22:46:14,443 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2023-06-02 22:46:14,893 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-02 22:46:14,941 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2023-06-02 22:46:15,227 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-02 22:46:15,260 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-02 22:46:15,349 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-06-02 22:46:15,495 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-02 22:46:15,588 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@537b3b2e
+2023-06-02 22:46:15,590 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-02 22:46:15,610 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-02 22:46:16,242 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-02 22:46:16,247 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-02 22:46:16,734 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-02 22:46:16,973 INFO o.s.b.StartupInfoLogger [main] Started UserApplicationTests in 2.796 seconds (process running for 3.51)
+2023-06-02 22:46:17,259 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-02 22:46:17,261 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-06-02 22:46:17,264 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
