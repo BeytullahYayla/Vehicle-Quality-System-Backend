@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2af5cefd-b29c-446f-9263-62a21b2b1d27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AuthenticationAndAuthorizationService/logs/archive/spring-boot-logging-2023-05-10.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/Gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/Gateway/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/Gateway/filter/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/Gateway/filter/RouteValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/Gateway/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/test/java/com/example/Gateway/GatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthenticationAndAuthorizationService/logs/spring-boot-logging.log" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAndAuthorizationService/logs/spring-boot-logging.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TerminalServices/src/main/java/com/example/terminal/core/utils/results/DataResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/TerminalServices/src/main/java/com/example/terminal/core/utils/results/DataResult.java" afterDir="false" />
-    </list>
+    <list default="true" id="2af5cefd-b29c-446f-9263-62a21b2b1d27" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +22,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Beytullah/Documents/GitHub/CarVehicleQualitySystem/AuthenticationAndAuthorizationService"
+    "last_opened_file_path": "C:/Users/Beytullah/Documents/GitHub/CarVehicleQualitySystem/DefectServices"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
