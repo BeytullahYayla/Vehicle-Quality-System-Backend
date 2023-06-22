@@ -13,13 +13,14 @@ services:
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=Beytullah.123
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    
 
   defect-service:
     build:
       context: ./defect-service
       dockerfile: Dockerfile
     ports:
-      - 8082:8082
+      - 8081:8081
     depends_on:
       - database
     environment:
@@ -33,7 +34,7 @@ services:
       context: ./usermanangement-service
       dockerfile: Dockerfile
     ports:
-      - 8083:8083
+      - 8082:8082
     depends_on:
       - database
     environment:
@@ -47,9 +48,10 @@ services:
       context: ./terminal-service
       dockerfile: Dockerfile
     ports:
-      - 8084:8084
+      - 8083:8083
     depends_on:
       - database
+      - authenticationandauthorization-service
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/CQVS
       - SPRING_DATASOURCE_USERNAME=postgres
@@ -67,10 +69,13 @@ services:
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
-      timeout: 5s
+      timeout: 10s
       retries: 5
     volumes:
       - db_data:/var/lib/postgresql/data
+
+    
+      
 
 volumes:
   db_data:
