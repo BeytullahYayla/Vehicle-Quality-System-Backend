@@ -16,12 +16,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
 
@@ -33,6 +31,7 @@ public class AuthenticationController {
 
     @Autowired
     private UserDetailService userDetailsService;
+
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -69,6 +68,7 @@ public class AuthenticationController {
 
     @PostMapping("/token")
     public JwtResponse authenticate(@RequestBody JwtRequest jwtRequest) throws Exception{
+
         try{
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(jwtRequest.getUserName(),
                     jwtRequest.getPassword()));
@@ -85,5 +85,25 @@ public class AuthenticationController {
 
         return new JwtResponse(token);
 
+
+
     }
+    @GetMapping("/validate")
+    public String validateToken(@RequestParam String token) {
+        // Kullanıcı ayrıntılarını elde etmek için UserDetails nesnesini kullanmanız gerekiyor.
+        // UserDetails nesnesini nasıl alacağınıza bağlı olarak, bu örnekte yeni bir sınıf örneği oluşturabilir veya önceki bir kullanıcıya dayalı olarak alabilirsiniz.
+        final UserDetails userDetails=userDetailsService.loadUserByUsername(jwtUtility.getUsernameFromToken(token));
+
+
+
+        if (jwtUtility.validateToken(token, userDetails)) {
+            return "Token is valid";
+        } else {
+            return  "Token is invalid";
+        }
+
+
+    }
+
+
 }

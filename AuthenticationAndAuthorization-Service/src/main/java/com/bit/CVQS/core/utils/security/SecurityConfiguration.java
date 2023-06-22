@@ -2,8 +2,8 @@ package com.bit.CVQS.core.utils.security;
 
 
 
-import com.bit.CVQS.core.utils.services.UserDetailService;
 import com.bit.CVQS.core.utils.security.filters.JwtFilter;
+import com.bit.CVQS.core.utils.services.UserDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -51,7 +51,7 @@ public class SecurityConfiguration {
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
 
-                        .requestMatchers("/api/Authentication/token","/api/Authentication/register").permitAll()
+                        .requestMatchers("/api/Authentication/token","/api/Authentication/register","/api/Authentication/validate").permitAll()
 
 
                 .anyRequest().authenticated().and()
